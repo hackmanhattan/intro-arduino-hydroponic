@@ -28,7 +28,7 @@ void loop() {
       analogWrite(pump,1023);
       delay(timetowater * 1000);
       Serial.println("waiting a minute");
-      delay(60000); //wait a minute;
+      delay(24*60*60*1000); //wait a minute;
   }
   analogWrite(pump,0);
   delay(5000);
